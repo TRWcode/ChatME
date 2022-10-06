@@ -13,12 +13,12 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #f7f7f7;
+    background-color: #392fd1;
 }
 
 .wrapper{
     background-color: rgb(255, 255, 255);
-    width: 450px;
+    width: 550px;
     border-radius: 16px;
     box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
                 0 32px 64px -48px rgba(0,0,0,0.5) ;
@@ -56,6 +56,7 @@ form .nane-details .field{
 
 .form form .field{
    display: flex;
+   position: relative;
    flex-direction: column;
    margin-bottom: 10px;
 }
@@ -90,6 +91,17 @@ form .nane-details .field{
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
+
+}
+
+.form form .field i{
+    position: absolute;
+    right: 15px;
+    color: #ccc;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
 
 }
 
