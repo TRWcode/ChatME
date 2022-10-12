@@ -124,7 +124,8 @@ form .nane-details .field{
     padding: 25px 30px;
 }
 
-.users header{
+.users header,
+.userlist a{
     display: flex;
     align-items: center;
     padding-bottom: 20px;
@@ -137,13 +138,9 @@ form .nane-details .field{
     border-radius: 50%;
 }
 
-.users header .content{
+:is(.users, .userlist) .content{
     display: flex;
-}
-
-.wrapper img{
-    object-fit: cover;
-    border-radius: 50%;
+    align-items: center;
 }
 
 .users header .content img{
@@ -151,13 +148,50 @@ form .nane-details .field{
     width: 80px;
 }
 
-.users header .details {
+:is(.users, .userlist) .details {
+    color: #000;
     margin-left: 15px;
 }
 
-.users header .details span{
+:is(.users, .userlist) .details span{
     font-size: 18px;
     font-weight: 500;
 }
 
+.users .search button{
+    width: 47px;
+    height: 42px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #333;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 0 5px 5px 0;
+}
+
+.userlist {
+    max-height: 350px;
+}
+
+.userlist a{
+    margin-bottom: 10px;
+    page-break-after: 10px;
+    padding-right: 15px;
+}
+
+.userlist a:last-child{
+    border: none;
+    margin-bottom: 0px;
+}
+
+.userlist a .content img{
+    height: 40px;
+    width: 40px;
+}
+
+.userlist a .status-dot{
+    font-size: 12px;
+    color: #468669;
+}
 
