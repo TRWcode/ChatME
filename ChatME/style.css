@@ -148,6 +148,10 @@ form .nane-details .field{
     width: 80px;
 }
 
+:is(.users, .userlist) .details .statuscolor{
+    color: #468669;
+}
+
 :is(.users, .userlist) .details {
     color: #000;
     margin-left: 15px;
@@ -156,6 +160,29 @@ form .nane-details .field{
 :is(.users, .userlist) .details span{
     font-size: 18px;
     font-weight: 500;
+}
+
+.users .search{
+    margin: 20px 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.users .search .text{
+    font-size: 18px;
+}
+
+.users .search input{
+    position: absolute;
+    height: 42px;
+    width: calc(100% - 50px);
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
 }
 
 .users .search button{
@@ -172,12 +199,18 @@ form .nane-details .field{
 
 .userlist {
     max-height: 350px;
+    overflow-y: auto;
+}
+
+.userlist::-webkit-scrollbar{
+    width: 0px;
 }
 
 .userlist a{
     margin-bottom: 10px;
     page-break-after: 10px;
     padding-right: 15px;
+    border-bottom-color: #f1f1f1;
 }
 
 .userlist a:last-child{
@@ -185,13 +218,42 @@ form .nane-details .field{
     margin-bottom: 0px;
 }
 
+
 .userlist a .content img{
     height: 40px;
     width: 40px;
 }
 
+.userlist a .content p{
+    color: #67676a;
+}
+
 .userlist a .status-dot{
     font-size: 12px;
     color: #468669;
+}
+
+/* class name voor offline */
+.userlist a .status-dot.offline{
+    color: #721c24;
+}
+
+/*chat CSS code */
+
+.chat-area header{
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+}
+
+.chat-area header .back-icon{
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+}
+
+.chat-area header img{
+    height: 45px;
+    width: 45px;
 }
 
