@@ -247,13 +247,24 @@ form .nane-details .field{
 }
 
 .chat-area header .back-icon{
-    height: 45px;
-    width: 45px;
-    margin: 0 15px;
+    font-size: 18px;
+    color: #333;
 }
 
 .chat-area header img{
     height: 45px;
     width: 45px;
+    margin: 0 15px;
+}
+
+.chat-area header span{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.chat-box{
+    height: 500px;
+    background-color: #f7f7f7;
+    padding: 10px 30px 20px 30px;
 }
 
