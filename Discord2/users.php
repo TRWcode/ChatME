@@ -27,7 +27,10 @@
               $row = mysqli_fetch_assoc($sql);
             }
           ?>
+          <div class="edit-profile">
           <img src="php/images/<?php echo $row['img']; ?>" alt="">
+          <a href="edit.php">Edit profile</a>
+          </div>
           <div class="details">
             <span><?php echo $row['uname']?></span>
             <p><?php echo $row['status']; ?></p>
