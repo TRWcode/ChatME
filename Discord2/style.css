@@ -13,6 +13,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     background-color: #392fd1;
+    padding: 0 10px;
 }
 
 .wrapper {
@@ -56,7 +57,11 @@ body {
 }
 
 form .nane-details .field:first-child {
-    margin: 10px;
+    margin-right: 10px;
+}
+
+form .name-details .field:last-child{
+    margin-left: 10px;
 }
 
 .form form .field {
@@ -67,11 +72,7 @@ form .nane-details .field:first-child {
 }
 
 .form form .field label {
-    margin: 2px;
-}
-
-.form form .field input {
-    outline: none;
+    margin-bottom: 2px;
 }
 
 .form form .input input {
@@ -81,6 +82,11 @@ form .nane-details .field:first-child {
     padding: 0 10px;
     border: 1px solid #ccc;
 }
+
+.form form .field input {
+    outline: none;
+}
+
 
 .form form .image input {
     font-size: 17px;
@@ -134,7 +140,7 @@ form .nane-details .field:first-child {
 }
 
 .users header,
-.userlist a {
+.users-list a {
     display: flex;
     align-items: center;
     padding-bottom: 20px;
@@ -147,7 +153,12 @@ form .nane-details .field:first-child {
     border-radius: 50%;
 }
 
-:is(.users, .userlist) .content {
+.users header img{
+    height: 50px;
+    width: 50px;
+}
+
+:is(.users, .users-list) .content {
     display: flex;
     align-items: center;
 }
@@ -157,16 +168,16 @@ form .nane-details .field:first-child {
     width: 80px;
 }
 
-:is(.users, .userlist) .details .statuscolor {
+:is(.users, .users-list) .details .statuscolor {
     color: #468669;
 }
 
-:is(.users, .userlist) .details {
+:is(.users, .users-list) .details {
     color: #000;
     margin-left: 15px;
 }
 
-:is(.users, .userlist) .details span {
+:is(.users, .users-list) .details span {
     font-size: 18px;
     font-weight: 500;
 }
@@ -190,19 +201,21 @@ form .nane-details .field:first-child {
     border: 1px solid #ccc;
     padding: 0 13px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
     outline: none;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.3 ease;
+    transition: all 0.2s ease;
 }
 
-.users .search input.active {
+.users .search input.show {
     opacity: 1;
     pointer-events: auto;
 }
 
 .users .search button {
+    position: relative;
+    z-index: 1;
     width: 47px;
     height: 42px;
     border: none;
@@ -212,6 +225,7 @@ form .nane-details .field:first-child {
     cursor: pointer;
     font-size: 17px;
     border-radius: 0 5px 5px 0;
+    transition: all 0.2s ease;
 }
 
 .users .search button.active {
@@ -223,45 +237,46 @@ form .nane-details .field:first-child {
     content: "\f00d";
 }
 
-.userlist {
+.users-list {
     max-height: 350px;
     overflow-y: auto;
 }
 
-:is(.userlist, .chat-box)::-webkit-scrollbar {
+:is(.users-list, .chat-box)::-webkit-scrollbar {
     width: 0px;
 }
 
-.userlist a {
+.users-list a {
     margin-bottom: 10px;
     page-break-after: 10px;
     padding-right: 15px;
     border-bottom-color: #f1f1f1;
 }
 
-.userlist a:last-child {
+.users-list a:last-child {
     border: none;
     margin-bottom: 0px;
 }
 
-.userlist a .content img {
+.users-list a img {
     height: 40px;
     width: 40px;
 }
 
-.userlist a .content p {
+.users-list a .content p {
     color: #67676a;
 }
 
-.userlist a .status-dot {
+.users-list a .status-dot {
     font-size: 12px;
     color: #468669;
+    padding-left: 10px;
 }
 
 
 /* class name voor offline */
 
-.userlist a .status-dot.offline {
+.users-list a .status-dot.offline {
     color: #721c24;
 }
 
