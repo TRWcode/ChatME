@@ -24,12 +24,8 @@
         <div class="error-text"></div>
         <div class="name-details">
           <div class="field input">
-            <label>Voornaam</label>
-            <input type="text" name="fname" placeholder="Voornaam" required>
-          </div>
-          <div class="field input">
-            <label>Achternaam</label>
-            <input type="text" name="lname" placeholder="Achternaam" required>
+            <label>Gebruikers naam</label>
+            <input type="text" name="uname" placeholder="Gebruikers naam" required>
           </div>
         <div class="field input">
           <label>Email</label>
