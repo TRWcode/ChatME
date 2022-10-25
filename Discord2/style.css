@@ -23,6 +23,14 @@ body {
     box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
 }
 
+.wrapper .logo{
+    display: flex;
+    justify-content: center;
+}
+.wrapper img{
+    height: 250px;
+    width: 250px;
+}
 
 /* singup css code */
 
@@ -32,7 +40,7 @@ body {
 
 .form header {
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 500;
     padding: 10px;
     border-bottom: 1px solid #e6e6e6;
 }

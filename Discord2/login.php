@@ -18,6 +18,7 @@
 </head>
 <body>
   <div class="wrapper">
+  <div class="logo"><img src="logo.png" alt=""></div>
     <section class="form login">
       <header>Start chatting with ChatME</header>
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">

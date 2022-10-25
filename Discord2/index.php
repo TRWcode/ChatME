@@ -18,22 +18,23 @@
 </head>
 <body>
   <div class="wrapper">
+  <div class="logo"><img src="logo.png" alt=""></div>
     <section class="form signup">
-      <header>ChatME</header>
+      <header>Make new ChatMe account</header>
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="name-details">
           <div class="field input">
-            <label>Gebruikers naam</label>
-            <input type="text" name="uname" placeholder="Gebruikers naam" required>
+            <label>Username</label>
+            <input type="text" name="uname" placeholder="Username..." required>
           </div>
         <div class="field input">
           <label>Email</label>
-          <input type="text" name="email" placeholder="Voer een email in" required>
+          <input type="text" name="email" placeholder="E-mail..." required>
         </div>
         <div class="field input">
-          <label>Wachtwoord</label>
-          <input type="password" name="password" placeholder="Voer nieuw wachtwoord in" required>
+          <label>Password</label>
+          <input type="password" name="password" placeholder="Password..." required>
           <i class="fas fa-eye"></i>
         </div>
         <div class="field image">
